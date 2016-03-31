@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter" ng-controller="MyCtrl">
+
+    <ion-pane>
+      <ion-header-bar class="bar-positive">
+        <h1 class="title">CodeChangers</h1>
+        <button class="button icon ion-navicon"></button>
+      </ion-header-bar>
+      <ion-content>
+        <br>
+        <a href="html_question.html" style="text-decoration:none;">
+          <div class="card">
+            <div class="item item-divider">
+              <h1><span class="ion-social-html5-outline"></span>  HTML</h1>
+            </div>
+            <div class="item item-text-wrap">
+              Click here to review your HTML basics.
+            </div>
+          </div>
+        </a>
+        <a href="css_question.html" style="text-decoration:none;">
+          <div class="card">
+            <div class="item item-divider">
+              <h1><span class="ion-social-css3-outline"></span> CSS</h1>
+            </div>
+            <div class="item item-text-wrap">
+              Click here to review your CSS basics.
+            </div>
+          </div>
+        </a>
+        <a href="js_question.html" style="text-decoration:none;">
+          <div class="card">
+            <div class="item item-divider">
+              <h1><span class="ion-social-nodejs"></span> JavaScript</h1>
+            </div>
+            <div class="item item-text-wrap">
+              Click here to review your JavaScript basics.
+            </div>
+          </div>
+        </a>
+
+      </ion-content>
+
+      <div class="bar bar-footer bar-positive">
+
+        <a class="tab-item" href="index.html">
+          <i class="icon ion-arrow-left-a"></i>
+        </a>
+        <div>
+          <h3 style="color:white;">Home</h3>
+        </div>
+        <a class="tab-item">
+          <i class="icon ion-help" ng-click="showAlert()"></i>
+        </a>
+      </div>
+
+    </ion-pane>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+/* Empty. Add your own CSS if you like */
+.centered {
+  text-align: center;
+}
+
+.white_text {
+  color:white;
+}
+
+#sign_in_btn {
+  padding-top: 25px;
+  text-align: center;
+}
+
+#sign_guest {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 18px;
+}
+
+#main_logo {
+  background-color:#007dc3;
+  padding: 50px 10px 25px 10px;
+}
+
+.no_underline {
+  text-decoration: none;
+}
+
+.title {
+  text-transform: uppercase;
+}
