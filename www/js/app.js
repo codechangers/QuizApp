@@ -29,7 +29,7 @@ angular.module('starter', ['ionic'])
 
       var alertPopup = $ionicPopup.alert({
          title: 'Hint',
-         template: 'This is where we will give hints...'
+         template: 'Remember that almost every tag has a closing tag. &lt;/...&gt;'
       });
 
       alertPopup.then(function(res) {

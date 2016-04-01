@@ -8,6 +8,7 @@
 
     <!-- compiled css output -->
     <link href="css/ionic.app.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
@@ -17,60 +18,45 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+
   </head>
   <body ng-app="starter" ng-controller="MyCtrl">
 
     <ion-pane>
-      <ion-header-bar class="bar-positive">
-        <a href="/language_lists.html" class="button icon-left ion-chevron-left button-clear" style="color:white;">Back</a>
-        <h1 class="title">CodeChangers</h1>
+      <ion-header-bar class="bar-dark">
+        <h1 class="title">HTML <span class="ion-social-html5"></span></h1>
         <button class="button icon ion-navicon"></button>
       </ion-header-bar>
-      <ion-content>
-        <br>
-
-        <a href="html_novice_question.html" style="text-decoration:none;">
+      <ion-content class="blueback">
+          <br>
           <div class="card">
-            <div class="item item-divider">
-              Novice
+            <div class="item item-divider orangeback">
+              <h2 class="whitetext" style="font-size:24px;">Question 1/10</h2>
             </div>
-            <div class="item item-text-wrap">
-              Click here to review basic HTML tags.
+            <div>
+              <h4><xmp class="centered"><h1>Hello, student_</xmp></h4>
             </div>
           </div>
-        </a>
+          <h3 class="centered whitetext space wrapper">What tag is missing at the end of this statement?</h3>
+          <div class="list wrapper space">
+            <label class="item item-input">
+              <input type="text" placeholder="Your Answer">
+            </label>
+          </div>
+          <div class="space">
+              <button class="button button-assertive button-large hintbtnleft" ng-click="showAlert()">
+                Hint
+              </button>
+          </div>
+          <div class="space">
+            <a href="html_menu.html">
+              <button class="button button-balanced button-large submitbtnright">
+                Check Answer
+              </button>
+            </a>
+          </div>
 
-        <div class="card">
-          <div class="item item-divider">
-            Intermediate
-          </div>
-          <div class="item item-text-wrap">
-            Click here to review intermediate HTML tags.
-          </div>
-        </div>
-        <div class="card">
-          <div class="item item-divider">
-            Advanced
-          </div>
-          <div class="item item-text-wrap">
-            Click here to review advanced HTML tags.
-          </div>
-        </div>
       </ion-content>
-
-      <div class="bar bar-footer bar-positive">
-
-        <a class="tab-item" href="index.html">
-          <i class="icon ion-arrow-left-a"></i>
-        </a>
-        <div>
-          <h3 style="color:white;">HTML - Home</h3>
-        </div>
-        <a class="tab-item">
-          <i class="icon ion-help" ng-click="showAlert()"></i>
-        </a>
-      </div>
-
     </ion-pane>
   </body>
 </html>
