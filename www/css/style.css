@@ -58,3 +58,18 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+#correctimg {
+  width: 80%;
+  padding: 50px 10px 25px 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#incorrectimg {
+  width: 80%;
+  padding: 25px 10px 15px 10px;
+  margin-right: auto;
+  margin-left: auto;
+
+}

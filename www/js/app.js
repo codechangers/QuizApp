@@ -25,15 +25,25 @@ angular.module('starter', ['ionic'])
 
 .controller('MyCtrl', function($scope, $ionicPopup) {
 
-   $scope.showAlert = function() {
+   $scope.showAlert1 = function() {
 
       var alertPopup = $ionicPopup.alert({
          title: 'Hint',
          template: 'Remember that almost every tag has a closing tag. &lt;/...&gt;'
       });
+   };
+   $scope.showAlert2 = function() {
 
-      alertPopup.then(function(res) {
-         // Custom functionality....
+      var alertPopup = $ionicPopup.alert({
+         title: 'Hint',
+         template: 'Remember, you are setting the "background color..."'
+      });
+   };
+   $scope.showAlert3 = function() {
+
+      var alertPopup = $ionicPopup.alert({
+         title: 'Hint',
+         template: 'Remember the key word to create a "VAR"iable...'
       });
    };
 
