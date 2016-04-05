@@ -8,7 +8,7 @@
 
     <!-- compiled css output -->
     <link href="css/ionic.app.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
@@ -23,44 +23,50 @@
   <body ng-app="starter" ng-controller="MyCtrl">
 
     <ion-pane>
-      <ion-header-bar class="bar-dark">
-        <h1 class="title">CodeChangers</h1>
-        <button class="button icon ion-navicon"></button>
-      </ion-header-bar>
-      <ion-content class="blueback">
-        <br>
-        <a href="html_menu.html" style="text-decoration:none;">
-          <div class="card">
-            <div class="item item-divider orangeback">
-              <h1 class="whitetext"><span class="ion-social-html5"></span>  –  HTML5</h1>
-            </div>
-            <div class="item item-text-wrap">
-              <h2>Use HTML5 to build awesome webpages! Click here to get started.</h2>
-            </div>
-          </div>
-        </a>
-        <a href="css_menu.html" style="text-decoration:none;">
-          <div class="card">
-            <div class="item item-divider orangeback">
-              <h1 class="whitetext"><span class="ion-social-css3"></span>  –  CSS3</h1>
-            </div>
-            <div class="item item-text-wrap">
-              <h2>Use CSS3 to make your website stand out! Click here to get started.</h2>
-            </div>
-          </div>
-        </a>
-        <a href="js_menu.html" style="text-decoration:none;">
-          <div class="card">
-            <div class="item item-divider orangeback">
-              <h1 class="whitetext"><span class="ion-social-javascript"></span>  –  JavaScript</h1>
-            </div>
-            <div class="item item-text-wrap">
-              <h2>Use JavaScript to add interaction to your website, and build games! Click here to get started.</h2>
-            </div>
-          </div>
-        </a>
 
-      </ion-content>
+      <ion-header-bar class="bar-dark">
+        <a href="index.html"><button class="button icon ion-navicon"></button></a>
+
+        <h1 class="title">CodeChangers</h1>
+
+      </ion-header-bar>
+
+        <ion-content class="blueback">
+
+          <br>
+          <a href="html_menu.html" style="text-decoration:none;">
+            <div class="card">
+              <div class="item item-divider orangeback">
+                <h1 class="whitetext"><span class="ion-social-html5"></span>  –  HTML5</h1>
+              </div>
+              <div class="item item-text-wrap">
+                <h2>Use HTML5 to build awesome webpages! Click here to get started.</h2>
+              </div>
+            </div>
+          </a>
+          <a href="css_menu.html" style="text-decoration:none;">
+            <div class="card">
+              <div class="item item-divider orangeback">
+                <h1 class="whitetext"><span class="ion-social-css3"></span>  –  CSS3</h1>
+              </div>
+              <div class="item item-text-wrap">
+                <h2>Use CSS3 to make your website stand out! Click here to get started.</h2>
+              </div>
+            </div>
+          </a>
+          <a href="js_menu.html" style="text-decoration:none;">
+            <div class="card">
+              <div class="item item-divider orangeback">
+                <h1 class="whitetext"><span class="ion-social-javascript"></span>  –  JavaScript</h1>
+              </div>
+              <div class="item item-text-wrap">
+                <h2>Use JavaScript to add interaction to your website, and build games! Click here to get started.</h2>
+              </div>
+            </div>
+          </a>
+
+        </ion-content>
+
     </ion-pane>
   </body>
 </html>

@@ -8,6 +8,7 @@
 
     <!-- compiled css output -->
     <link href="css/ionic.app.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
@@ -21,37 +22,50 @@
   <body ng-app="starter">
 
     <ion-pane>
-      <ion-header-bar class="bar-positive">
-        <a href="/language_lists.html" class="button icon-left ion-chevron-left button-clear" style="color:white;">Back</a>
-        <h1 class="title">CodeChangers</h1>
-        <button class="button icon ion-navicon"></button>
+      <ion-header-bar class="bar-dark">
+
+        <a href="language_menu.html"><button class="button icon ion-navicon"></button></a>
+        <h1 class="title">JavaScript <span class="icon ion-social-javascript"></span></h1>
+
       </ion-header-bar>
-      <ion-content>
+
+
+      <ion-content class="blueback">
+
         <br>
+
+        <a href="js_question.html" class="no_underline">
+          <div class="card">
+            <div class="item item-divider orangeback">
+              <h1 class="whitetext">Beginner<h1>
+            </div>
+            <div class="item item-text-wrap">
+              <h2>Click here to review basic JavaScript.</h2>
+            </div>
+          </div>
+        </a>
+
+        <a href="js_question.html" class="no_underline">
+          <div class="card">
+            <div class="item item-divider orangeback">
+              <h1 class="whitetext">Intermediate</h1>
+            </div>
+            <div class="item item-text-wrap">
+              <h2>Click here to review intermediate JavaScript.</h2>
+            </div>
+          </div>
+        </a>
+
+        <a href="js_question.html" class="no_underline">
         <div class="card">
-          <div class="item item-divider">
-            Novice
+          <div class="item item-divider orangeback">
+            <h1 class="whitetext">Advanced</h1>
           </div>
           <div class="item item-text-wrap">
-            Click here to review basic JavaScript.
+            <h2>Click here to review advanced JavaScript.</h2>
           </div>
         </div>
-        <div class="card">
-          <div class="item item-divider">
-            Intermediate
-          </div>
-          <div class="item item-text-wrap">
-            Click here to review intermediate JavaScript.
-          </div>
-        </div>
-        <div class="card">
-          <div class="item item-divider">
-            Advanced
-          </div>
-          <div class="item item-text-wrap">
-            Click here to review advanced JavaScript.
-          </div>
-        </div>
+
       </ion-content>
     </ion-pane>
   </body>

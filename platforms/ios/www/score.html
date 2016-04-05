@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+
+  </head>
+  <body ng-app="starter" ng-controller="MyCtrl">
+
+    <ion-pane>
+
+      <ion-header-bar class="bar-dark">
+        <a href="incorrect.html"><button class="button icon ion-navicon"></button></a>
+
+        <h1 class="title">Score</h1>
+
+      </ion-header-bar>
+
+        <ion-content class="blueback">
+
+          <br>
+          <div class="centered">
+            <h1 class="whitetext">Score: <span style="color:#ef473a;text-shadow:1px 2px 2px #333;">8,990</span></h1>
+            <h1 class="whitetext">Rank: <span style="color:#ef473a;text-shadow:1px 2px 2px #333;">1st</span></h1>
+          </div>
+
+          <br>
+
+          <h1 class="whitetext" style="padding-left:10px;">Leaderboard:</h1>
+          <div class="list">
+
+            <a class="item item-avatar" href="#">
+              <img src="img/logo2.png" style="background-color:#007dc3; border-radius:25px">
+              <h2>CodeChanger13</h2>
+              <p>Score: 8700</p>
+            </a>
+
+            <a class="item item-avatar" href="#">
+              <img src="img/ionic.png">
+              <h2>Ionic57</h2>
+              <p>Score: 8550</p>
+            </a>
+
+            <a class="item item-avatar" href="#">
+              <img src="img/checkmark.png">
+              <h2>Checker22</h2>
+              <p>Score: 8347</p>
+            </a>
+
+        </div>
+
+        <div >
+          <a href="html_menu.html">
+            <button class="button button-balanced button-large submitbtnright">
+              Continue...
+            </button>
+          </a>
+        </div>
+
+        </ion-content>
+
+    </ion-pane>
+  </body>
+</html>
