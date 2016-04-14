@@ -1,0 +1,26 @@
+<ion-view view-title="{{lang.name}} - {{difficulty.name}}" ng-controller="QuestionCtrl">
+      <ion-content class="blueback">
+          <br>
+          <div class="card">
+            <div class="item item-divider orangeback">
+              <h2 class="whitetext" style="font-size:24px;">Question {{question.id}}</h2>
+            </div>
+            <div>
+              <h4><xmp class="centered"><h1>Hello, student_</xmp></h4>
+            </div>
+          </div>
+          <h3 class="centered whitetext space wrapper">{{question.text}}</h3>
+          <form name="question_form" ng-submit="check_question(question_form)">
+            <div class="list wrapper space">
+              <label class="item item-input">
+                <input type="text" name="answer" ng-model="answer.text" placeholder="Your Answer">
+              </label>
+            </div>
+            <div class="space">
+                <button type="submit" class="button button-balanced button-large submitbtnright">
+                  Check Answer
+                </button>
+            </div>
+          </form>
+      </ion-content>
+</ion-view>

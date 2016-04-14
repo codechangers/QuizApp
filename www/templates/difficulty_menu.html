@@ -1,0 +1,17 @@
+<ion-view view-title="{{lang.name}}" ng-controller="LanguageCtrl" >
+  <ion-content class="blueback">
+
+
+    <a href="/#/{{lang.slug}}/questions/{{difficulty.slug}}/next-question" style="text-decoration:none;" ng-repeat="difficulty in lang.difficulty_levels">
+      <div class="card">
+        <div class="item item-divider orangeback">
+          <h1 class="whitetext"><span class="{{lang.icon}}"></span>  –  {{difficulty.name}}</h1>
+        </div>
+        <div class="item item-text-wrap">
+          <h2>{{difficulty.description}}</h2>
+        </div>
+      </div>
+    </a>
+
+  </ion-content>
+</ion-view>
