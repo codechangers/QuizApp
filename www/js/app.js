@@ -74,16 +74,20 @@
     }
     $scope.answer = {};
     $scope.check_question = function(form) {
+      var templateUrl;
       if ($scope.answer.text==$scope.question.answer) {
-        console.log('you did it!');
-        $ionicModal.fromTemplateUrl('templates/correct.html', {
-          scope: $scope,
-          animation: 'slide-in-up'
-        }).then(function(modal) {
-          $scope.modal = modal;
-          modal.show();
-        });
+        templateUrl = 'templates/correct.html';
       }
+      else {
+        templateUrl = 'templates/incorrect.html';
+      }
+      $ionicModal.fromTemplateUrl(templateUrl, {
+        scope: $scope,
+        animation: 'slide-in-up'
+      }).then(function(modal) {
+        $scope.modal = modal;
+        modal.show();
+      });
     };
   });
 
